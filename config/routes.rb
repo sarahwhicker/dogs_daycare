@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
-  resources :dogs, only: [:index, :new, :create]
+  resources :dogs, only: [:index, :new, :create, :show]
 
-  get 'dogs/index'
+ # get 'dogs/index'
 
-  get 'dogs/new'
+  # get 'dogs/new'
 
   get 'pages/index'
 
