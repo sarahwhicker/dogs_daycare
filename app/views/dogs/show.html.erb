@@ -1,16 +1,18 @@
 <h1>Meet <%= @dog.name %></h1>
 
 <p>
-	<strong>ID:</strong>strong><%= @dog.id %>
+	<strong>ID:</strong><%= @dog.id %>
 </p>
 
 <p>
-	<strong>Breed:</strong>strong><%= @dog.breed %>	
+	<strong>Breed:</strong><%= @dog.breed %>	
 </p>
 
 <p>
-	<strong>Age:</strong>strong><%= @dog.age %>
+	<strong>Age:</strong><%= @dog.age %>
 </p>
 
-<!-- <p><strong>Date Added:</strong> <%= @dog.created_at.stamp('07/07/1995') %> -->
-<!-- </p> -->
+<p><strong>Date Added:</strong> <%= @dog.created_at.stamp('07/07/1995') %> 
+</p> 
+
+<%= link_to "Back to Dogs", dogs_path %>
