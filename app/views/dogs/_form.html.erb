@@ -2,8 +2,8 @@
 	<%= dog_fields.label :name %>
 	<%= dog_fields.text_field :name %>
 
-	<%= dog_fields.label :breed %>
-	<%= dog_fields.text_field :breed %>
+	<%= dog_fields.label :breed_id %>
+	<%= dog_fields.collection_select :breed_id, Breed.all, :id, :name %>
 
 	<%= dog_fields.label :age %>
 	<%= dog_fields.text_field :age %>

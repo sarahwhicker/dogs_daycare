@@ -29,7 +29,7 @@ class DogsController < ApplicationController
     if @dog.update(dog_params)
       redirect_to dogs_url, notice: "Successfully updated!"
     else
-      flash.now[:notice] = "Something went wrwong. Didn't update your dog."
+      flash.now[:notice] = "Something went wrong. Didn't update your dog."
       render:edit
     end
   end
@@ -45,7 +45,7 @@ end
 
 private
   def dog_params
-  	params.require(:dog).permit(:name, :breed, :age, :owner_id)
+  	params.require(:dog).permit(:name, :breed_id, :age, :owner_id)
   end
 
 end
